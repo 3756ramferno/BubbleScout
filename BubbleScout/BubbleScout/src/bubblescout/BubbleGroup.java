@@ -18,7 +18,7 @@ public class BubbleGroup
     ArrayList <Bubble> bubbleList = new ArrayList <>();
     String name;
     
-    void BubbleGroup(String name)
+    BubbleGroup(String name)
     {
         this.name = name;
     }//End of constructor
@@ -33,5 +33,11 @@ public class BubbleGroup
         
         return numFilled;
     }//End of getNumberFilled
+        
+    
+    public static void addBubble(int x, int y)
+    {
+        bubbleGroupList.get(bubbleGroupList.size()).bubbleList.add(new Bubble(x, y));
+    }//End of addBubble
     
 }//End of class

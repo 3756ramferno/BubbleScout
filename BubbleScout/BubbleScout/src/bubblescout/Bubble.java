@@ -6,9 +6,7 @@
 
 package bubblescout;
 
-import java.awt.Color;
 import java.awt.Rectangle;
-import java.awt.image.ColorModel;
 
 /**
  *
@@ -23,7 +21,7 @@ public class Bubble
     int darknessThreshold = 50;
     
     
-    void Bubble(int xCoordinate, int yCoordinate)
+    Bubble(int xCoordinate, int yCoordinate)
     {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
@@ -58,5 +56,5 @@ public class Bubble
         
         return isFilled;
     }//End of checkIsFilled()
-    
+        
 }//End of class
