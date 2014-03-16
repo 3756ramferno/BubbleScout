@@ -6,6 +6,9 @@
 
 package bubblescout;
 
+import bubblescout.ui.PanelManager;
+import bubblescout.ui.Window;
+import bubblescout.ui.WindowManager;
 import java.io.IOException;
 import javax.swing.JFileChooser;
 
@@ -26,16 +29,24 @@ public class BubbleScout
     {
         // TODO code application logic here
         
+        ///////////////////////////////////////////////////////
+        //                   Create Frames                   //
+        ///////////////////////////////////////////////////////
+        PanelManager PanelManager = new PanelManager();
+        WindowManager WindowManager = new WindowManager();
+        
+        // Display Intro Screen
+        WindowManager.display("START");
         
         /**************** TEST CODE ******************/
 //        JFileChooser csvFileChooser = new JFileChooser();
 //        csvFileChooser.setDialogTitle("Select csv file");
 //        csvFilename = csvFileChooser.getSelectedFile().getAbsolutePath();
 //        csvFile = new CSVFile(csvFilename);
-        csvFile = new CSVFile("C:/Users/Jared/Documents/GitHub/BubbleScout/BubbleScout.txt2csv.csv");
-        ScoutSheets.readTemplateData();
-        ScoutSheets.selectFiles();
-        ScoutSheets.scanAll();
+//        csvFile = new CSVFile("C:/Users/Dale/Downloads/Labs/In Development/BubbleScout/BubbleScout/BubbleScout.txt2csv.csv");
+//        ScoutSheets.readTemplateData();
+//        ScoutSheets.selectFiles();
+//        ScoutSheets.scanAll();
     }
         
 }//End of class
