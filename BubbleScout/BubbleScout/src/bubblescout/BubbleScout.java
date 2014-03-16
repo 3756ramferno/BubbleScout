@@ -20,20 +20,19 @@ public class BubbleScout
 {
     static CSVFile csvFile;
     static String csvFilename;
+    public static WindowManager WindowManager = new WindowManager();
     
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
      */
-    public static void main(String[] args) throws IOException 
-    {
+    public static void main(String[] args) throws IOException{
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////
         //                   Create Frames                   //
         ///////////////////////////////////////////////////////
         PanelManager PanelManager = new PanelManager();
-        WindowManager WindowManager = new WindowManager();
         
         // Display Intro Screen
         WindowManager.display("START");

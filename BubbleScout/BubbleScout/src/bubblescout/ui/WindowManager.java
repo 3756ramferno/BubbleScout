@@ -22,10 +22,11 @@ public class WindowManager {
     public WindowManager(){
         // SETUP WINDOWS MAP
         windows.put("START",new Window("BubbleScout",600,400));
-        windows.put("TPL",new Window("BubbleScout: Create Template",600,400));
+        windows.put("TPL",new Window("BubbleScout: Create Template",1000,800));
         
         // ASSEMBLE GUI
         windows.get("START").add(PanelManager.startPanel());
+        windows.get("TPL").add(PanelManager.tplPanel());
     }
 
     public void display(String window) {
